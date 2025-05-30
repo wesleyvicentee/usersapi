@@ -17,7 +17,7 @@ app.post('/users', async (req, res) => {
     })
 
     console.log(req)
-    res.send('foi')
+    res.status(200).json({ message: "Usuário adicionado" })
 })
 
 app.get('/users', async (req, res) => {
